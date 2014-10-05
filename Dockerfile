@@ -1,7 +1,8 @@
 # CentOS 7 + Docker-gen
-# Original @ andrefernandes/docker-centos7-base
-FROM dockerfile/ubuntu
-MAINTAINER Simon Chiu
+
+FROM andrefernandes/docker-centos7-base
+
+MAINTAINER Andre Fernandes
 
 # Based on the original work from "jwilder / nginx-proxy"
 # Unlike the original nginx-proxy image, here I try to
@@ -24,3 +25,4 @@ ENV DOCKER_HOST unix:///var/run/docker.sock
 VOLUME ["/etc/nginx/sites-enabled"]
 
 CMD ["/app/start-docker-gen.sh"]
+
