@@ -1,8 +1,7 @@
 # CentOS 7 + Docker-gen
-
-FROM andrefernandes/docker-centos7-base
-
-MAINTAINER Andre Fernandes
+# Original work Andre Fernandes
+FROM geetfun/docker-centos7-base
+MAINTAINER Simon Chiu
 
 # Based on the original work from "jwilder / nginx-proxy"
 # Unlike the original nginx-proxy image, here I try to
